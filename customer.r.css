@@ -1,0 +1,20 @@
+.rating {
+  font-size: 24px;
+  color: gold;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h3 {
+  font-family: 'Laila', serif;
+}
+
+h4 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  width: 50%;
+  margin-left: 3%;
+}
