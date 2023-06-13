@@ -1,203 +1,147 @@
-* {
-    box-sizing: border-box;
-    font-family:Quicksand;
-  font-weight: 500;
-
-  }
-.topnav {
-  margin-left:-25px;
-    margin-right:-25px;
-  justify-content: flex-end;
-  background-color: #FFEBD7;
-   height: 61px;
-width: 1700px;
-top: 142px;
-  a:hover {
-  background-color: #ddd;
-  color: #000000;
-}
-  
-}
-.right-icons {
-  float: right;
+/* Global styles */
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.right-icons a {
+/* Header styles */
+header {
+  background-color: #FCDEC0;
+  height: 166px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu-button {
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: auto; /* Move the menu button to the right */
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-grow: 2; /* Adjust the flex-grow value to control the logo position */
+  margin-left: 180px; /* Add some left margin to move the logo to the right */
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  margi
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.dropbtn {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.wishlist-symbol,
+.cart-symbol {
+  font-size: 20px;
+  margin-left: 10px; /* Add some spacing between the symbols */
+}
+/* Footer styles */
+footer {
+  background-color: #FFF5EA;
   padding: 20px;
-  text-decoration: none;
-  font-size: 17px;
+  text-align: center;
 }
 
-.right-icons a i {
-  margin-right: 5px;
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.right-icons a:hover {
-  background-color: #ddd;
-  color: #000000;
+.footer-section {
+  flex-grow: 1;
+  margin: 0 20px;
 }
-.topnav a {
-  float: left;
-  color: #000000;
-    margin-left: 75px;
 
+.footer-section:first-child {
   text-align: left;
-  padding: 20px 10px;
-  text-decoration: none;
-  font-size: 17px;
-  
 }
 
-  /* Global styles */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FCDEC0;
-  }
-  
-  p {
-    margin: 0;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  /* Add the following CSS styles */
-  /* Header styles */
-  header {
-    background-color: #FCDEC0;
-    padding-bottom: 20px;
-  }
-  
-  .container{
-    margin-top:1%;
-  }
-
-  .top-padding {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-      margin-left: 60px;
-
-  }
- 
-
-.side-menu .menu-symbol {
-  margin-right: 45px; /* Adjust the margin as needed */
+.footer-section:last-child {
+  text-align: right;
 }
 
-  
-  .menu-symbol {
-    font-size: 20px;
-    margin-right: 10px;
-  }
-  
-  .search-bar {
-    flex-grow: 1;
-    text-align: center;
-    border-radius:5px;
-  }
-  
-  .form-inline {
-    display: inline-block;
-  }
-  
-  .form-control {
-    width: 300px;
-    height: 30px;
-    padding: 5px;
-      border-radius: 5px; 
+.footer-section.middle {
+  flex-grow: 2;
+}
 
-  }
-  
-  .right-section {
-    display: flex;
-    align-items: center;
-    
-  }
-  
-  .login {
-    margin-right: 10px;
-  }
-  
-  .wishlist-symbol,
-  .cart-symbol {
-    font-size: 20px;
-    margin-right: 5px;
-  }
-  
-  .bottom-padding {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  .categories ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .categories ul li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .address-section p {
-    margin: 0;
-  }
-  
-  /* Banner styles */
-  .banner {
-    background-color: #FEC0B0;
-    text-align: left;
-    padding: 250px;
-    color: #1F1F1F;
-    font-family: 'Laila';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: 0.04em;
-    background-image: url(images/Untitled-4\ 3.png);
-    background-size: cover;
-    background-position: center;
-  }
+.footer-section.middle a {
+  margin: 0 10px;
+}
 
-  .search-MKo {
-    align-items
-    : 
-    center;
-    background-color
-    : 
-    #ffffff;
-    border-radius
-    : 
-    1.2rem;
-    box-sizing
-    : 
-    border-box;
-    display
-    : 
-    flex;
-    flex-shrink
-    : 
-    0;
-    margin
-    : 
-    1.7rem 18.2rem 0rem 0rem;
-    overflow
-    : 
-    hidden;
-    padding-left
-    : 
-    1.8rem;
-    position
-    : 
-    relative;
-    }
+.footer-section.middle a:last-child {
+  margin-right: 0;
+}
+
+.footer-section.middle a:after {
+  content: "|";
+  margin: 0 5px;
+}
+
+.footer-section.middle a:last-child:after {
+  content: none;
+}
+
+.footer-section.right {
+  text-align: right;
+}
+
+.footer-section.right::before {
+  content: "© ";
+}
+
+/* Optional: Add your own additional styles as needed */
