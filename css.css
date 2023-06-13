@@ -1,0 +1,85 @@
+.container {
+  display: block;
+  position: relative;
+  padding-left: 125px; 
+  margin-top: 40px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 26px;
+  width: 26px;
+  background-color: #ccc;
+  border-radius: 100%;
+    margin-left: 95px;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #e6e6e6;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.divider {
+  border: none;
+  height: 0px;
+  background-color: #ccc;
+  width: 597px;
+  position: relative;
+  left: 4px;
+  top: 41px;
+  border-radius: 0px;
+}
+.coupon-container {
+  height: 100%;
+  width: 25%; /* Decrease the width to 30% */
+  background-color: #FFF5EA; /* Set background color to #FFF5EA */
+  padding: 20px;
+  border-radius: 16px;
+    float: right; /* Add this line to move the container to the right */
+position: absolute; /* Add this line */
+  top: 120px; /* Adjust the top value as per your requirement */
+  right: 250px; /* Adjust the right value as per your requirement */
+}
+.pay-now-button {
+  height: 50px;
+  width: 280px;
+  top: 420px;
+  border-radius: 8px;
+  position: absolute; /* Add this line */
+  right: 250px; /* Adjust the right value as per your requirement */
+  background-color:#DA7644;
+  color:white;
+  border:0;
+}
