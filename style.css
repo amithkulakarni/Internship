@@ -1,147 +1,287 @@
-/* Global styles */
-body {
-  font-family: 'Quicksand', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Header styles */
-header {
-  background-color: #FCDEC0;
-  height: 166px;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-.menu-button {
-  font-size: 20px;
-  cursor: pointer;
-  margin-left: auto; /* Move the menu button to the right */
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  flex-grow: 2; /* Adjust the flex-grow value to control the logo position */
-  margin-left: 180px; /* Add some left margin to move the logo to the right */
-}
-
-.logo img {
-  max-width: 100%;
-  height: auto;
-  margi
-}
-
-.user-section {
-  display: flex;
-  align-items: center;
-}
-
-.user-name {
-  font-size: 16px;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.dropbtn {
-  font-size: 16px;
-  font-weight: bold;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
+.panel1 {
+  height: 188px;
+  width: 1263px;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  left: 120px;
+  top: 170px;
+  border-radius: 12px;
+  background-color: #f2f2f2;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.panel1 .rating {
+  position: absolute;
+  top:140px;
+  left: 225px;
+  font-size: 24px;
+  color: gold;
+}
+.panel1 .panel-heading {
+  position: absolute;
+  width: 349px;
+  top: 9px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 24px; /* Adjust the font size as desired */
+  color: #333333; /* Add color as desired */
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+}
+.panel1 .order-link {
+  position: absolute;
+  top: 110px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 18px; /* Adjust the font size as desired */
+  color: #D97642
+  ;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
+.price {
+  position: absolute;
+  height: 32px;
+  width: 63px;
+  left: 711px;
+  top: 32px;
+  font-family: 'Quicksand', sans-serif;
+
+}
+.panel1 .status1 {
+  position: absolute;
+  width: 90px;
+  left: 858px;
+  top: 25px;
+  border: 2px solid;
+  border-radius: 24px;
+  padding: 9px, 16px, 9px, 16px;
+  padding-left: 19px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-color: red;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+} 
+.panel1 .status2 {
+  position: absolute;
+  height: 32px;
+  width: 215px;
+  left: 1049px;
+  top: 32px;
+  font-family: 'Quicksand', sans-serif;
+
+} 
+
+.panel2 {
+  height: 188px;
+  width: 1263px;
+  position: absolute;
+  top: 230px;
+  border-radius: 12px;
+  background-color: #f2f2f2;
 }
 
-.wishlist-symbol,
-.cart-symbol {
-  font-size: 20px;
-  margin-left: 10px; /* Add some spacing between the symbols */
+.panel2 .rating {
+  position: absolute;
+  top:140px;
+  left: 225px;
+  font-size: 24px;
+  color: gold;
 }
-/* Footer styles */
-footer {
-  background-color: #FFF5EA;
-  padding: 20px;
-  text-align: center;
+.panel2 .panel-heading {
+  position: absolute;
+  width: 349px;
+  top: 9px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 24px; /* Adjust the font size as desired */
+  color: #333333; /* Add color as desired */
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+}
+.panel2 .order-link {
+  position: absolute;
+  top: 110px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 18px; /* Adjust the font size as desired */
+  color: #D97642
+  ;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.price {
+  position: absolute;
+  height: 32px;
+  width: 63px;
+  left: 711px;
+  top: 32px;
+  font-family: 'Quicksand', sans-serif;
+
+}
+.status21 {
+  position: absolute;
+  width: 90px;
+  left: 858px;
+  top: 25px;
+  border: 2px solid;
+  border-radius: 24px;
+  padding: 9px, 16px, 9px, 16px;
+  padding-left: 19px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-color: #0DA700;
+  font-family: 'Quicksand', sans-serif;
+ font-size: 12px;
+} 
+.status22 {
+  position: absolute;
+  height: 32px;
+  width: 215px;
+  left: 1049px;
+  top: 32px;
+  font-family: 'Quicksand', sans-serif;
+
+} 
+
+
+
+.panel3 {
+  height: 188px;
+  width: 1263px;
+  position: absolute;
+  top: 460px;
+  border-radius: 12px;
+  background-color: #f2f2f2;
 }
 
-.footer-section {
-  flex-grow: 1;
-  margin: 0 20px;
+.panel3 .rating {
+  position: absolute;
+  top:140px;
+  left: 225px;
+  font-size: 24px;
+  color: gold;
+}
+.panel3 .panel-heading {
+  position: absolute;
+  width: 349px;
+  top: 9px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 24px; /* Adjust the font size as desired */
+  color: #333333; /* Add color as desired */
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+}
+.panel3 .order-link {
+  position: absolute;
+  top: 110px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 18px; /* Adjust the font size as desired */
+  color: #D97642
+  ;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
-.footer-section:first-child {
-  text-align: left;
+.price {
+  position: absolute;
+  height: 32px;
+  width: 63px;
+  left: 711px;
+  top: 32px;
+  font-family: 'Quicksand', sans-serif;
+
+}
+.status31 {
+  position: absolute;
+  width: 90px;
+  left: 858px;
+  top: 25px;
+  border: 2px solid;
+  border-radius: 24px;
+  padding: 9px, 16px, 9px, 16px;
+  padding-left: 19px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-color: red;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+} 
+.status32 {
+  position: absolute;
+  height: 32px;
+  width: 215px;
+  left: 1049px;
+  top: 32px;
+  font-family: 'Quicksand', sans-serif;
+
+} 
+.panel4 {
+  height: 188px;
+  width: 1263px;
+  position: absolute;
+  top: 230px;
+  border-radius: 12px;
+  background-color: #f2f2f2;
 }
 
-.footer-section:last-child {
-  text-align: right;
+.panel4 .rating {
+  position: absolute;
+  top:140px;
+  left: 225px;
+  font-size: 24px;
+  color: gold;
+}
+.panel4 .panel-heading {
+  position: absolute;
+  width: 349px;
+  top: 9px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 24px; /* Adjust the font size as desired */
+  color: #333333; /* Add color as desired */
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+}
+.panel4 .order-link {
+  position: absolute;
+  top: 110px; /* Adjust the top value to position the heading */
+  left: 225px;
+  font-size: 18px; /* Adjust the font size as desired */
+  color: #D97642
+  ;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
-.footer-section.middle {
-  flex-grow: 2;
-}
+.price {
+  position: absolute;
+  height: 32px;
+  width: 63px;
+  left: 711px;
+  top: 32px;
+  font-family: 'Quicksand', sans-serif;
 
-.footer-section.middle a {
-  margin: 0 10px;
 }
+.status41 {
+  position: absolute;
+  width: 90px;
+  left: 858px;
+  top: 25px;
+  border: 2px solid;
+  border-radius: 24px;
+  padding: 9px, 16px, 9px, 16px;
+  padding-left: 19px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-color: #0DA700;
+  font-family: 'Quicksand', sans-serif;
+ font-size: 12px;
+} 
+.status42 {
+  position: absolute;
+  height: 32px;
+  width: 215px;
+  left: 1049px;
+  top: 32px;
+  font-family: 'Quicksand', sans-serif;
 
-.footer-section.middle a:last-child {
-  margin-right: 0;
-}
+} 
 
-.footer-section.middle a:after {
-  content: "|";
-  margin: 0 5px;
-}
 
-.footer-section.middle a:last-child:after {
-  content: none;
-}
-
-.footer-section.right {
-  text-align: right;
-}
-
-.footer-section.right::before {
-  content: "© ";
-}
-
-/* Optional: Add your own additional styles as needed */
